@@ -11,9 +11,12 @@ steps:
   args:
   - run
   - --filename=./kebectl.yaml
-  - --image=gcr.io/$PROJECT_ID/myapp:latest
-  - --location=us-central1
-  - --cluster=nginx-1  
+  - '--image'
+  - 'gcr.io/$PROJECT_ID/myapp:$COMMIT_SHA'
+  - '--region'
+  - 'us-central1'
+  - '--cluster'
+  - 'nginx-1'  
   waitFor: ['push-image-to-container-registry']
   id: 'deploy-to-cloud-kubrnetes'
 # - name: 'gcr.io/cloud-builders/gcloud'
