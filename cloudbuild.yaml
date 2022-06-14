@@ -14,7 +14,7 @@ steps:
   - '--image'
   - 'gcr.io/$PROJECT_ID/myapp:$COMMIT_SHA'
   - '--location'
-  - 'us-central1'
+  - 'us-central1-c'
   - '--cluster'
   - 'nginx-1'  
   waitFor: ['push-image-to-container-registry']
