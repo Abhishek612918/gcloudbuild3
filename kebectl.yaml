@@ -9,8 +9,13 @@ spec:
   type: LoadBalancer
   ports:
    - protocol: TCP
+<<<<<<< HEAD
      port: 8080
      targetPort: 80
+=======
+     port: 80
+     targetPort: 8080
+>>>>>>> b49cc76fba17d692036b9f19ecbba0579788bc4f
 ---
 apiVersion: "apps/v1"
 kind: "Deployment"
