@@ -30,4 +30,4 @@ spec:
     spec:
       containers:
       - name: "nginx-1"
-        image: "gcr.io/$PROJECT_ID/myapp:$COMMIT_SHA"
+        image: "gcr.io/glass-marker-349216/myapp"
