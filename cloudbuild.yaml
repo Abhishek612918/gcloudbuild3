@@ -16,7 +16,7 @@ steps:
   - '--location'
   - 'us-central1-c'
   - '--cluster'
-  - 'nginx-1'  
+  - 'cluster-1'  
   waitFor: ['push-image-to-container-registry']
   id: 'deploy-to-cloud-kubernetes'
 # - name: 'gcr.io/cloud-builders/gcloud'
