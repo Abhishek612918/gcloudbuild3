@@ -30,4 +30,4 @@ spec:
     spec:
       containers:
       - name: "nginx-1"
-        image: "nginx:latest"
+        image: "gcr.io/glass-marker-349216/myapp@sha256:e5c777cfb4933c7e634c335accaf652ff26a09c1bd2bf4792312acfd09c61a07"
