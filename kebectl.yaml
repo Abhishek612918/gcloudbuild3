@@ -30,4 +30,4 @@ spec:
     spec:
       containers:
       - name: "nginx-1"
-        image: "gcr.io/glass-marker-349216/myapp"
+        image: "gcr.io/glass-marker-349216/myapp:latest"
