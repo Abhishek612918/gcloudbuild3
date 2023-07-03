@@ -14,9 +14,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run:
-        timestamp=$(date +"%Y%m%d%H%M%S")
-        docker build . --file Dockerfile --tag my-image-name:$timestamp
+    - name: Build and push Docker image
+      run: |
+        timestamp=$(date +%Y%m%d%H%M%S)
+        docker build -t your-image-name:latest .
+        docker tag your-image-name:latest your-image-name:${timestamp}
+        docker push your-image-name:${timestamp}
     
       
