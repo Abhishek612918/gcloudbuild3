@@ -17,6 +17,6 @@ jobs:
     - name: Build the Docker image
       run:
         timestamp=$(date +"%Y%m%d%H%M%S")
-        docker build . --file Dockerfile --tag my-image-name:${{ timestamp }}
+        docker build . --file Dockerfile --tag my-image-name:$timestamp
     
       
