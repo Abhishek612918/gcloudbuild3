@@ -15,4 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:${{ github.run_id }}
+      run: 
+        docker build . --file Dockerfile --tag my-image-name:${{ github.run_id }}
+    - name: Build the Docker image
+      run: 
+        pip install kubernetes-client
